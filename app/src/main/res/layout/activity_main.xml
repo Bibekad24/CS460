@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Input Panel (Display for the calculator) -->
+    <TextView
+        android:id="@+id/inputPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/input_panel_default"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:background="#D3D3D3"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap" />
+
+    <!-- Calculator Buttons Grid -->
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintTop_toBottomOf="@id/inputPanel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <Button
+            android:text="@string/button_clear"
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#337DFF"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_left_parenthesis"
+            android:id="@+id/buttonLeftParenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_right_parenthesis"
+            android:id="@+id/buttonRightParenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_divide"
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFCC00"
+            android:textColor="#000000" />
+
+        <!-- Row 2 -->
+        <Button
+            android:text="@string/button_7"
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_8"
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_9"
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_multiply"
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFCC00"
+            android:textColor="#000000" />
+
+        <!-- Row 3 -->
+        <Button
+            android:text="@string/button_4"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_5"
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_6"
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_add"
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFCC00"
+            android:textColor="#000000" />
+
+        <!-- Row 4 -->
+        <Button
+            android:text="@string/button_1"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_2"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_3"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_subtract"
+            android:id="@+id/buttonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFCC00"
+            android:textColor="#000000" />
+
+        <!-- Row 5 -->
+        <Button
+            android:text="@string/button_all_clear"
+            android:id="@+id/buttonAllClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF3377"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_0"
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF8033"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_decimal"
+            android:id="@+id/buttonDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6C757D"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:text="@string/button_equals"
+            android:id="@+id/buttonEquals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFCC00"
+            android:textColor="#000000" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

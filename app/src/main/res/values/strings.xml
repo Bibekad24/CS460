@@ -1,0 +1,34 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">CalculatorApp</string>
+
+    <!-- Input Panel Text -->
+    <string name="input_panel_text">Your Last Name, CWU ID</string>
+    <string name="input_panel_default">Your Last Name, CWU ID</string>
+
+    <!-- Error Message -->
+    <string name="error_message">Error</string>
+
+    <!-- Button Labels -->
+    <string name="button_0">0</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_9">9</string>
+    <string name="button_decimal">.</string>
+    <string name="button_add">+</string>
+    <string name="button_subtract">-</string>
+    <string name="button_multiply">*</string>
+    <string name="button_divide">/</string>
+    <string name="button_equals">=</string>
+    <string name="button_clear">C</string>
+    <string name="button_all_clear">AC</string>
+    <string name="button_left_parenthesis">(</string>
+    <string name="button_right_parenthesis">)</string>
+
+</resources>

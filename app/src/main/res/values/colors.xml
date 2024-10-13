@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default Button Style -->
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">#6C757D</item> <!-- Default Gray -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Clear Button (C Key) -->
+    <style name="CalcButtonClear">
+        <item name="android:background">#337DFF</item> <!-- Clear Button Color -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- All Clear Button (AC Key) -->
+    <style name="CalcButtonAllClear">
+        <item name="android:background">#FF3377</item> <!-- All Clear Button Color -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Zero Button (0 Key) -->
+    <style name="CalcButtonZero">
+        <item name="android:background">#FF8033</item> <!-- Orange Color for Zero -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Operator Buttons (Orange for Operations like +, -, /, *) -->
+    <style name="CalcButtonOrange">
+        <item name="android:background">#FFCC00</item> <!-- Operator Button Color -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
